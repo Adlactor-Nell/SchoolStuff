@@ -1,0 +1,37 @@
+student_names=[]              #Array for Student Names
+student_marks=[]              #Array for Student Marks
+student_Tmarks=[]             #Array for Total Mark (Mark1+Mark2+Mark3)
+highest_mark=0                   #Variable for the highest
+best_student=""                  #Variable for the highest
+
+for student in range(3):                                   #This line will allow the code to repeat itself.
+    name = str(input("Enter the Student's name: "))          #Asks for the name of the student. 
+    student_names.append(name)                                 #Appends the name of the student to the array.
+    mark1 = int(input("Enter the Student's first mark: "))   #Asks for the 1st mark of the student. 
+    while mark1 > 20:                                      #If the first mark is above 20 then it will print an error message and restart the code.
+        print("That's an invalid number.")
+        mark1 = int(input("Enter the Student's first mark: "))
+    mark2 = int(input("Enter the Student's second mark: "))  #Asks for the 2nd mark of the student. 
+    while mark2 > 25:                                      #If the second mark is above 20 then it will print an error message and restart the code. 
+        print("That's an invalid number.")
+        mark2 = int(input("Enter the Student's first mark: "))
+    mark3 = int(input("Enter the Student's third mark: "))   #Asks for the 3rd mark of the student. 
+    while mark3 > 30:                                      #If the third mark is above 20 then it will print an error message and restart the code. 
+        print("That's an invalid number.")
+        mark3 = int(input("Enter the Student's first mark: "))
+
+    total= mark1+mark2+mark3    
+    student_marks.append(mark1+mark2+mark3)                    #Appends all the marks together
+    Student_Tmarks = mark1+mark2+mark3
+    print(student_names)                            #Print the names of the students and their marks.
+    print(student_marks)
+    if total > highest_mark:
+        highest_mark = total
+        best_student=student_names[student]
+print("The best student is:", best_student , "with a total score of", highest_mark)
+
+
+    
+    
+average = sum(student_marks)/len(student_marks)   #This will find the average of the total marks by dividing the total marks by the amount of numbers.
+print("The average is:", average)

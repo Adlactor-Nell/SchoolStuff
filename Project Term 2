@@ -1,0 +1,131 @@
+PhoneCode = ["BPCM","BPSH","RPSS","RPLL","YPLS","YPLL"]
+PhoneDescription = ["Compact","Clam Shell","RoboPhone - 5' screen and 64GB Memory","RoboPhone 6' screen and 256GB Memory","Y-Phone Standard - 6' screen and 64GB Memory","Y-Phone Deluxe - 6' screen and 256 GB Memory"]
+PhonePrice = ["29.99","49.99","199.99","499.99","549.99","649.99"]
+
+TabletCode = ["RTMS","RTLM","YTLM","YTLL"]
+TabletDescription = ["RoboTab – 8-inch screen and 64GB Memory","RoboTab – 10-inch screen and 128GB Memory","Y-Tab Standard – 10-inch screen and 128GB Memory","Y-Tab Deluxe – 10-inch screen and 256GB Memory"]
+TabletPrice = ["149.99","299.99","499.99","599.99"]
+
+SIMCode = ["SMNO","SMPG"]
+SIMDescription = ["SIM Free (no SIM Card Purchased)","Pay As You Go (SIM Card Purchased)"]
+SIMPrice = ["0.00","9.99"]
+
+CaseCode = ["CSST","CSLX"]
+CaseDescription = ["Standard","Luxury"]
+CasePrice = ["0.00","50.00"]
+
+ChargerCode = ["CGCR","CGHM"]
+ChargerDescription = ["Car","Home"]
+ChargerPrice = ["19.99","15.99"]
+# The list containing everything (Phones, Tablets, SIM Cards, Cases and Chargers).
+
+Price = []
+TaborPhone = int(input("Hello, do you wish to buy a Tablet or a Phone, input in 1 for a phone or 2 for a tablet: "))
+while TaborPhone != 1 or TaborPhone != 2:
+  TaborPhone = int(input("Please input in a valid option: "))
+  if TaborPhone == 1:
+    print("We offer a wide range of phones, here are some of our offerings:")
+    print("For the",PhoneDescription[0],"Phone, input 0")
+    print("For the",PhoneDescription[1],"Phone, input 1.")
+    print("For",PhoneDescription[2],", input 2.")
+    print("For",PhoneDescription[3],", input 3.")
+    print("For",PhoneDescription[4],", input 4.")
+    print("For",PhoneDescription[5],", input 5.")
+    PhoneChoice = int(input("Please input it from the available options to pick a phone: "))
+    while PhoneChoice != 1 or PhoneChoice != 2 or PhoneChoice != 3 or PhoneChoice != 4 or PhoneChoice != 5 or PhoneChoice != 0:
+      PhoneChoice = int(input("Please input it from the available options to pick a phone: "))
+      if PhoneChoice == 0:
+        print("Thanks for choosing",PhoneDescription[0],", it will cost you",PhonePrice[0])
+        PhonePrice[0].append(Price)
+      if PhoneChoice == 1:
+        print("Thanks for choosing",PhoneDescription[1],", it will cost you",PhonePrice[1])
+        PhonePrice[1].append(Price)
+      if PhoneChoice == 2:
+        print("Thanks for choosing",PhoneDescription[2],", it will cost you",PhonePrice[2])
+        PhonePrice[2].append(Price)
+      if PhoneChoice == 3:
+        print("Thanks for choosing",PhoneDescription[3],", it will cost you",PhonePrice[3])
+        PhonePrice[3].append(Price)
+      if PhoneChoice == 4:
+        print("Thanks for choosing",PhoneDescription[4],", it will cost you",PhonePrice[4])
+        PhonePrice[4].append(Price)
+      if PhoneChoice == 5:
+        print("Thanks for choosing",PhoneDescription[5],", it will cost you",PhonePrice[5])
+        PhonePrice[5].append(Price)
+  elif TaborPhone == 2:
+    print("We offer a wide range of tablets, here are some of our offerings:")
+    print("For the",TabletDescription[0],", input 0")
+    print("For the",TabletDescription[1],", input 1")
+    print("For the",TabletDescription[2],", input 2")
+    print("For the",TabletDescription[3],", input 3")
+
+print("We also offer the",SIMDescription[0],"Package or the",SIMDescription[1],"Package.")
+SimOption = int(input("Input in 1 for",SIMDescription[0],"Package or 2 for the",SIMDescription[1]))
+
+
+
+
+
+
+PhoneCode = ["BPCM","BPSH","RPSS","RPLL","YPLS","YPLL"]
+PhoneDescription = ["Compact","Clam Shell","RoboPhone - 5' screen and 64GB Memory","RoboPhone 6' screen and 256GB Memory","Y-Phone Standard - 6' screen and 64GB Memory","Y-Phone Deluxe - 6' screen and 256 GB Memory"]
+PhonePrice = ["29.99","49.99","199.99","499.99","549.99","649.99"]
+
+TabletCode = ["RTMS","RTLM","YTLM","YTLL"]
+TabletDescription = ["RoboTab – 8-inch screen and 64GB Memory","RoboTab – 10-inch screen and 128GB Memory","Y-Tab Standard – 10-inch screen and 128GB Memory","Y-Tab Deluxe – 10-inch screen and 256GB Memory"]
+TabletPrice = ["149.99","299.99","499.99","599.99"]
+
+SIMCode = ["SMNO","SMPG"]
+SIMDescription = ["SIM Free (no SIM Card Purchased)","Pay As You Go (SIM Card Purchased)"]
+SIMPrice = ["0.00","9.99"]
+
+CaseCode = ["CSST","CSLX"]
+CaseDescription = ["Standard","Luxury"]
+CasePrice = ["0.00","50.00"]
+
+ChargerCode = ["CGCR","CGHM"]
+ChargerDescription = ["Car","Home"]
+ChargerPrice = ["19.99","15.99"]
+# The list containing everything (Phones, Tablets, SIM Cards, Cases and Chargers).
+
+Price = []
+TaborPhone = int(input("Hello, \nTo buy a phone please input in 1 or if you wish to buy a tablet please input in 2: "))
+if TaborPhone == 1:
+  print("We offer a wide range of phones, here are some of our offerings:")
+  print("For the",PhoneCode[0],PhoneDescription[0],"Phone which costs",PhonePrice[0],",input 0: \nFor the",PhoneCode[1],PhoneDescription[1],"Phone which costs",PhonePrice[1],",input 1: \nFor the",PhoneCode[2],PhoneDescription[2],"Phone which costs",PhonePrice[2],",input 2: \nFor the",PhoneCode[3],PhoneDescription[3],"Phone which costs",PhonePrice[3],",input 3: \nFor the",PhoneCode[4],PhoneDescription[4],"Phone which costs",PhonePrice[4],",input 4: \nFor the",PhoneCode[5],PhoneDescription[5],"Phone which costs",PhonePrice[5],",input 5:")
+  PhoneChoice = int(input("Please input from the available options to pick a Phone: "))
+  if PhoneChoice == 0:
+    print("Thanks for choosing the",PhoneCode[0],PhoneDescription[0],", it will cost you",PhonePrice[0])
+    PhonePrice[0].append(Price)
+  if PhoneChoice == 1:
+    print("Thanks for choosing the",PhoneCode[1],PhoneDescription[1],", it will cost you",PhonePrice[1])
+    PhonePrice[1].append(Price)
+  if PhoneChoice == 2:
+    print("Thanks for choosing the",PhoneCode[2],PhoneDescription[2],", it will cost you",PhonePrice[2])
+    PhonePrice[2].append(Price)
+  if PhoneChoice == 3:
+    print("Thanks for choosing the",PhoneCode[3],PhoneDescription[3],", it will cost you",PhonePrice[3])
+    PhonePrice[3].append(Price)
+  if PhoneChoice == 4:
+    print("Thanks for choosing the",PhoneCode[4],PhoneDescription[4],", it will cost you",PhonePrice[4])
+    PhonePrice[4].append(Price)
+  if PhoneChoice == 5:
+    print("Thanks for choosing",PhoneCode[5],PhoneDescription[5],", it will cost you",PhonePrice[5])
+    PhonePrice[5].append(Price)
+elif TaborPhone == 2:
+  print("For the",TabletCode[0],TabletDescription[0],"Tablet which costs",TabletPrice[0],",input 0: \nFor the",TabletCode[1],TabletDescription[1],"Tablet which costs",TabletPrice[1],",input 1: \nFor the",TabletCode[2],TabletDescription[2],"Tablet which costs",TabletPrice[2],",input 2: \nFor the",TabletCode[3],TabletDescription[3],"Tablet which costs",TabletPrice[3],",input 3:")
+  TabChoice = int(input("Please input in from the available options to pick a Tablet: "))
+  if TabChoice == 0:
+    print("Thanks for choosing the",TabletCode[0],TabletDescription[0],", it will cost you",TabletPrice[0])
+    TabletPrice[0].append(Price)
+  if TabChoice == 1:
+    print("Thanks for choosing the",TabletCode[1],TabletDescription[1],", it will cost you",TabletPrice[1])
+    TabletPrice[1].append(Price)
+  if TabChoice == 2:
+    print("Thanks for choosing the",TabletCode[2],TabletDescription[2],", it will cost you",TabletPrice[2])
+    TabletPrice[2].append(Price)
+  if TabChoice == 3:
+    print("Thanks for choosing the",TabletCode[3],TabletDescription[3],", it will cost you",TabletPrice[3])
+    TabletPrice[3].append(Price)
+print("We also offer the",SIMDescription[0],"Package or the",SIMDescription[1],"Package.")
+SimOption = int(input("Input in 1 for",SIMDescription[0],"Package or 2 for the",SIMDescription[1]))

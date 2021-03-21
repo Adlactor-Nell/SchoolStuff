@@ -1,0 +1,23 @@
+Competitor_Name=[]
+Competitor_Level=[]
+ 
+for Competitor in range(4):
+   Name = str(input("Please enter a name: "))
+   Competitor_Name.append(Name)
+   print("Please input",Name+"’s age:")
+   Age = int(input())
+   if Age < 12:
+       Level = "Junior"
+       Competitor_Level.append(Level)
+   elif Age >= 18:
+       Level = "Senior"
+       Competitor_Level.append(Level)
+   else:
+       Level = "Teen"
+       Competitor_Level.append(Level)
+
+print("Name and Competition List:")
+print(Competitor_Name[0],"-",Competitor_Level[0])
+print(Competitor_Name[1],"-",Competitor_Level[1])
+print(Competitor_Name[2],"-",Competitor_Level[2])
+print(Competitor_Name[3],"-",Competitor_Level[3])

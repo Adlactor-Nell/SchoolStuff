@@ -1,0 +1,21 @@
+Names=[]
+Areas=[]
+Count = 0
+Rooms = int(input("How many rooms do you have? "))
+for room in range(Rooms):
+  Count=+ 1
+  print("Please input the name of room",Count,":")
+  Name = input()
+  Names.append(Name)
+  print("Please enter the length (m) of room",Count,":")
+  Length = int(input())
+  print("Please input the width (m) of room",Count,":")
+  Width = int(input())
+  Area=Length*Width
+  Areas.append(Area)
+print("House Details")
+for output in range(Rooms):
+  print("Room -",Names)
+  print(Areas,"metres squared")
+  print("The total area is calculated as:")
+  print(AreaAdded,"metres squared")
